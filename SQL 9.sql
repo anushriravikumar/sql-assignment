@@ -1,0 +1,8 @@
+#QUESTION 9
+SELECT
+SH_CONTENT, SUM(AMOUNT) AS Content_Wise_Amount
+FROM
+logistics_Emp
+GROUP BY (SH_CONTENT)
+ORDER BY Content_Wise_Amount DESC
+LIMIT 5;
